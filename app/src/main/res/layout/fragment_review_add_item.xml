@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGreyBackground"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <com.manouti.itemfinder.util.ui.TypefacedTextView
+            android:id="@+id/item_details_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="10dp"
+            android:text="@string/item_details_text_view"
+            font:typeface="Roboto-Bold.ttf"
+            android:layout_below="@id/autocomplete_fragment_cardview" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/item_details_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_details_text_view"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginEnd="26dp">
+
+                <com.manouti.itemfinder.util.ui.TypefacedTextView
+                    android:id="@+id/item_summary_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/result_view"
+                    font:typeface="Roboto-Regular.ttf" />
+
+                <com.manouti.itemfinder.util.ui.TypefacedTextView
+                    android:id="@+id/item_description_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/result_view"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    font:typeface="Roboto-Light.ttf" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.manouti.itemfinder.util.ui.TypefacedTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msg_default_id"
+                        android:textColor="@color/result_view"
+                        font:typeface="Roboto-Bold.ttf"
+                        android:paddingRight="@dimen/half_padding" />
+
+                    <com.manouti.itemfinder.util.ui.TypefacedTextView
+                        android:id="@+id/id_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/result_view"
+                        font:typeface="Roboto-Light.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.manouti.itemfinder.util.ui.TypefacedTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msg_default_type"
+                        android:textColor="@color/result_view"
+                        font:typeface="Roboto-Bold.ttf"
+                        android:paddingRight="@dimen/half_padding"/>
+
+                    <com.manouti.itemfinder.util.ui.TypefacedTextView
+                        android:id="@+id/type_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        font:typeface="Roboto-Light.ttf"
+                        android:textColor="@color/result_view"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.manouti.itemfinder.util.ui.TypefacedTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msg_default_time"
+                        android:textColor="@color/result_view"
+                        font:typeface="Roboto-Bold.ttf"
+                        android:paddingRight="@dimen/half_padding"/>
+
+                    <com.manouti.itemfinder.util.ui.TypefacedTextView
+                        android:id="@+id/time_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        font:typeface="Roboto-Light.ttf"
+                        android:textColor="@color/result_view" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <com.manouti.itemfinder.util.ui.TypefacedTextView
+            android:id="@+id/place_details_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:text="@string/place_details_text_view"
+            font:typeface="Roboto-Bold.ttf"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/item_details_cardview" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/place_details_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/place_details_text_view"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginEnd="26dp">
+
+                <com.manouti.itemfinder.util.ui.TypefacedTextView
+                    android:id="@+id/place_title_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    font:typeface="Roboto-Light.ttf"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/place_details_text_view" />
+
+                <com.manouti.itemfinder.util.ui.TypefacedTextView
+                    android:id="@+id/place_description_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    font:typeface="Roboto-Light.ttf"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="40dp"
+                    android:layout_below="@id/place_title_text_view" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <com.manouti.itemfinder.util.ui.TypefacedTextView
+            android:id="@+id/no_connection_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/no_internet_connection"
+            font:typeface="Roboto-Regular.ttf"
+            android:drawableTop="@drawable/ic_cloud_off_black_48dp"
+            android:drawablePadding="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/place_details_cardview"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_add_item"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            style="@style/FirebaseUI.Button"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/button_text"
+            android:text="@string/button_add_item"
+            android:layout_below="@id/no_connection_text_view" />
+
+        <ImageButton
+            android:id="@+id/button_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_navigate_before_black_48dp"
+            android:background="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.manouti.itemfinder"
+    android:installLocation="auto">
+
+    <!-- TODO: add versionName and versionCode in manifest element once published -->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.screen.landscape" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".ItemfinderApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/itemfinder"
+        android:label="@string/app_name"
+        android:logo="@mipmap/itemfinder"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name=".home.MainActivity"
+            android:label="@string/app_name"
+            android:stateNotNeeded="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.manouti.itemfinder.prefs.ItemfinderPreferencesActivity"
+            android:label="@string/preferences_name"
+            android:stateNotNeeded="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.manouti.itemfinder.item.history.HistoryActivity"
+            android:label="@string/history_title"
+            android:stateNotNeeded="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".map.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".item.additem.AddItemPlaceActivity"
+            android:label="@string/title_activity_add_item_place"
+            android:parentActivityName=".home.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".home.MainActivity" />
+        </activity>
+        <activity
+            android:name=".item.additem.AddNewItemActivity"
+            android:label="@string/title_activity_add_item"
+            android:parentActivityName=".item.additem.AddItemPlaceActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".item.additem.AddItemPlaceActivity" />
+        </activity>
+        <activity
+            android:name=".about.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".home.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".about.LegalNoticesActivity"
+            android:label="@string/title_activity_legal_notices"
+            android:parentActivityName=".about.AboutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".user.locations.SavedLocationsActivity"
+            android:label="@string/title_activity_saved_locations"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".user.locations.AddUserLocationActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_add_my_location"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddPlaceActivity"
+            android:label="@string/title_activity_add_place"
+            android:parentActivityName=".item.additem.AddItemPlaceActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".item.additem.AddItemPlaceActivity" />
+        </activity>
+        <activity
+            android:name=".item.barcode.ItemfinderCaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="sensorLandscape"
+            android:stateNotNeeded="true"
+            android:theme="@style/CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".user.UserProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".user.items.FavoriteItemsActivity"
+            android:label="@string/title_activity_favorite_items"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".user.items.UserAddedItemsActivity"
+            android:label="@string/title_activity_user_added_items"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".user.items.ReviewAddedItemsActivity"
+            android:label="@string/title_activity_review_added_items"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".user.EditProfileActivity"
+            android:label="@string/title_activity_edit_profile"
+            android:parentActivityName=".user.UserProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.manouti.itemfinder.user.UserProfileActivity" />
+        </activity>
+        <activity
+            android:name=".user.UserImageDialog"
+            android:parentActivityName=".user.UserProfileActivity"
+            android:theme="@style/AppThemeDialog">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.manouti.itemfinder.user.UserProfileActivity" />
+        </activity>
+        <activity
+            android:name=".item.detail.ItemDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".user.items.ReviewProposedItemActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".item.nearby.NearbyItemsActivity"
+            android:label="@string/title_activity_nearby_items"
+            android:parentActivityName=".home.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.manouti.itemfinder.home.MainActivity" />
+        </activity>
+        <activity
+            android:name=".search.SearchableItemActivity"
+            android:label="@string/title_activity_searchable_item"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".user.rewards.UserRewardsActivity"
+            android:label="@string/title_activity_user_rewards"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HelpActivity"
+            android:label="@string/menu_help"
+            android:parentActivityName=".home.MainActivity"
+            android:screenOrientation="user"
+            android:stateNotNeeded="true" />
+
+        <provider
+            android:name=".search.ItemSuggestionProvider"
+            android:authorities="com.manouti.itemfinder.search.ItemSuggestionProvider" />
+
+        <service
+            android:name=".service.NearbyItemsTaskService"
+            android:exported="true"
+            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

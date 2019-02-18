@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|bottom">
+
+    <include layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1.0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                style="@style/FirebaseUI.AuthMethodPicker.Logo"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_holder"
+            android:layout_weight="0"
+            style="@style/FirebaseUI.AuthMethodPicker.ButtonHolder">
+
+            <Button
+                android:id="@+id/email_provider"
+                style="@style/FirebaseUI.Button.AccountChooser.EmailButton"
+                android:text="@string/email_button_text"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

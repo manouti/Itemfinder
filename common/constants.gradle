@@ -1,0 +1,8 @@
+project.ext.firebase_version = '10.2.0'
+project.ext.support_library_version = '23.4.0' // Support Library version used by Itemfinder
+
+//project.ext.submodules = ['database', 'auth']
+project.ext.group = "com.firebaseui"
+project.ext.version = '0.4.2'
+project.ext.pomdesc = 'Firebase UI Android'
+project.ext.buildtools = '23.0.3' // Build Tools revision used by Itemfinder

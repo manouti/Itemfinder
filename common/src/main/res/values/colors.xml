@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="itemfinder_dark">#3C4058</color>
+	<color name="colorMainBackground">#FFFFFF</color>
+	<color name="colorLightGreyBackground">#EEEEEE</color>
+	<color name="colorControlHighlight">@color/ripple_material_light</color>
+	<color name="colorPrimary">#333333</color>
+    <color name="colorSecondaryButtons">#7272C2</color>
+	<color name="colorFloatingButton">#4242D2</color>
+	<color name="colorPrimaryDark">#000000</color>
+	<color name="colorActionBarText">#FFFFFF</color>
+	<color name="tab_text_enabled">#FF000000</color>
+	<color name="tab_text_disabled">#4D000000</color>
+	<color name="colorRecyclerViewHolder">@color/colorMainBackground</color>
+	<color name="colorRecyclerViewHolder_selected">#ffd6d7d7</color>
+	<color name="colorRedButton">#FF33BB</color>
+	<color name="colorBlueButton">#0000FF</color>
+	<color name="colorSweetDialogProgress">#999966</color>
+	<color name="colorToggleStar">#FFDB3B</color>
+	<color name="colorDisabledButton">@color/button_material_light</color>
+	<color name="separatorLightGray">#ddd</color>
+	<color name="colorGreen">#00FF00</color>
+	<color name="info_text">#444444</color>
+    <color name="button_text">#FFFFFF</color>
+	<color name="white">#FFFFFF</color>
+	<color name="help_button">#ffb0b0b0</color>
+	<color name="tab_indicator">#ffb0b0b0</color>
+	<color name="tooltip_color">#ffa0a0a0</color>
+	<color name="progress_spinner_color">#ff707070</color>
+	<color name="rewards">#99cc00</color>
+
+	<!-- valus for search view -->
+	<color name="material_light_primary_text">#DE000000</color>
+	<color name="material_light_hint_text">#61000000</color>
+	<color name="material_light_active_icon">#8A000000</color>
+	<color name="material_ripple_light">#1F000000</color>
+	<color name="divider_color">#1F000000</color>
+	<color name="active_icon_color">#8A000000</color>
+	<color name="cards_and_dialogs_color">@android:color/white</color>
+	<color name="quantum_grey_600">#757575</color>
+
+	<!-- values from ZXing Barcode Scanner -->
+	<color name="contents_text">#ff000000</color>
+	<color name="encode_view">#ffffffff</color>
+	<color name="possible_result_points">#c0ffbd21</color>
+	<!-- Android standard ICS color -->
+	<color name="result_minor_text">#ffc0c0c0</color>
+	<color name="result_points">#c099cc00</color>
+	<!-- Android standard ICS color -->
+	<color name="result_text">#ffffffff</color>
+	<color name="result_view">#b0000000</color>
+	<color name="status_text">#ffffffff</color>
+	<color name="transparent">#00000000</color>
+	<color name="viewfinder_laser">#ffcc0000</color>
+	<!-- Android standard ICS color -->
+	<color name="viewfinder_mask">#60000000</color>
+
+	<!-- Colors from Auth UI -->
+	<color name="authui_colorPrimary">#3E50B4</color>
+	<color name="authui_colorPrimaryDark">#2F3E9E</color>
+	<color name="authui_colorAccent">#3E50B4</color>
+	<color name="authui_colorActivated">#1a237e</color>
+
+	<color name="headingColor">#212121</color>
+	<color name="bodyTextColor">#c0000000</color>
+	<color name="errorColor">#DD2C00</color>
+	<color name="linkColor">#4285F4</color>
+	<color name="buttonColor">@color/authui_colorPrimary</color>
+	<color name="buttonColorPressed">@color/authui_colorActivated</color>
+	<color name="buttonTextColor">#FFFFFF</color>
+	<color name="inputLabelColor">#757575</color>
+	<color name="shadowColor">#eeeeee</color>
+</resources>

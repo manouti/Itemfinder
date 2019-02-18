@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.manouti.itemfinder.util.ui.TypefacedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/no_saved_location_text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/no_rewards_text_view"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    font:typeface="Roboto-Regular.ttf"
+    android:drawableTop="@drawable/ic_card_giftcard_black_48dp"
+    android:drawablePadding="5dp" />

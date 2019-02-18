@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground">
+
+    <RelativeLayout
+        android:id="@+id/item_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:id="@+id/search_item_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <SearchView
+                android:id="@+id/item_search_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:queryHint="@string/search_hint"
+                android:iconifiedByDefault="false" />
+
+            <ImageButton
+                android:id="@+id/button_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/barcode_scanner"
+                android:layout_gravity="center_vertical"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:background="?attr/actionBarItemBackground"
+                tools:ignore="contentDescription" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/item_search_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/search_item_linear_layout"
+            android:layout_marginTop="3dp"
+            android:background="@color/colorDisabledButton"/>
+
+        <RelativeLayout
+            android:id="@+id/item_description_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_search_separator"
+            android:background="@color/colorLightGreyBackground"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:visibility="gone">
+
+            <com.manouti.itemfinder.util.ui.TypefacedTextView
+                android:id="@+id/item_summary_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                font:typeface="Roboto-Bold.ttf"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/result_view"/>
+
+            <com.manouti.itemfinder.util.ui.TypefacedTextView
+                android:id="@+id/item_description_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_summary_text_view"
+                font:typeface="Roboto-Light.ttf"
+                android:maxLines="7"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:textColor="@color/result_view"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/items_tabs"
+        android:layout_height="35dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/item_search_layout"
+        app:tabIndicatorColor="@color/colorBlueButton"
+        app:tabTextAppearance="@style/AddItemTab">
+
+        <android.support.design.widget.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/tab_recent_items"/>
+
+        <android.support.design.widget.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/tab_favorite_items"/>
+
+    </android.support.design.widget.TabLayout>
+
+    <View
+        android:id="@+id/item_tabs_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/items_tabs"
+        android:background="@color/colorDisabledButton"/>
+
+    <com.manouti.itemfinder.item.additem.NonSwipeableViewPager
+        android:id="@+id/items_view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/item_tabs_separator">
+
+        <LinearLayout
+            android:id="@+id/recent_items_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/recent_items_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/favorite_items_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/favorite_items_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </com.manouti.itemfinder.item.additem.NonSwipeableViewPager>
+
+    <ImageButton
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_navigate_next_black_48dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        tools:ignore="contentDescription" />
+
+</RelativeLayout>

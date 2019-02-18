@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_48dp"
+            android:title="@string/action_home" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history_black_48dp"
+            android:title="@string/menu_history" />
+        <item
+            android:id="@+id/nav_added_items"
+            android:icon="@drawable/ic_check_circle_black_48dp"
+            android:title="@string/nav_added_items"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_rate_review_added_items"
+            android:icon="@drawable/ic_rate_review_black_48dp"
+            android:title="@string/nav_rate_review_added_items" />
+        <item
+            android:id="@+id/nav_favorite_items"
+            android:icon="@drawable/ic_star_black_48dp"
+            android:title="@string/nav_favorite_items"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_saved_locations"
+            android:icon="@drawable/ic_place_black_48dp"
+            android:title="@string/nav_saved_locations"
+            android:visible="false"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/menu_share" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_48dp"
+            android:title="@string/action_settings" />
+        <item
+            android:id="@+id/nav_help_center"
+            android:icon="@drawable/ic_help_black_48dp"
+            android:title="@string/action_help_center" />
+    </group>
+
+</menu>

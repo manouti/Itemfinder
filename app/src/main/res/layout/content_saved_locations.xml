@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".user.locations.SavedLocationsActivity"
+    tools:showIn="@layout/activity_saved_locations">
+
+    <com.manouti.itemfinder.util.ui.SwipeUpOnlyRefreshLayout
+        android:id="@+id/swiperefresh_saved_locations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.manouti.itemfinder.util.recyclerview.RecyclerViewWithContextMenu
+            android:id="@+id/recycler_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="55dp"
+            tools:listitem="@layout/location_cardview" />
+
+    </com.manouti.itemfinder.util.ui.SwipeUpOnlyRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageButton
+            android:id="@+id/help_button"
+            style="@style/HelpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="showHelp"
+            tools:ignore="contentDescription" />
+
+        <ViewStub
+            android:id="@+id/no_saved_location_stub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout="@layout/layout_no_saved_location" />
+
+        <ProgressBar
+            android:id="@+id/user_locations_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/progress_spinner_color"/>
+
+        <com.nhaarman.supertooltips.ToolTipRelativeLayout
+            android:id="@+id/tooltip_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin" />
+
+    </RelativeLayout>
+
+</merge>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_detail_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/item_small_image_view"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/profile_picture_content_desc"
+            android:src="@drawable/anon_user_48dp"
+            android:visibility="invisible" />
+
+        <com.manouti.itemfinder.util.ui.TypefacedTextView
+            android:id="@+id/item_summary_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/item_small_image_view"
+            android:layout_toEndOf="@id/item_small_image_view"
+            android:textColor="@color/result_view"
+            font:typeface="Roboto-Bold.ttf" />
+
+        <LinearLayout
+            android:id="@+id/item_summary_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/item_summary_text_view"
+            android:layout_toRightOf="@id/item_small_image_view"
+            android:layout_toEndOf="@id/item_small_image_view"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp">
+
+            <com.manouti.itemfinder.util.ui.TypefacedTextView
+                android:id="@+id/item_rating_text_view"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlueButton"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                font:typeface="Roboto-Regular.ttf" />
+
+            <RatingBar
+                android:id="@+id/item_rating_bar_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_gravity="center_vertical"
+                android:theme="@style/RatingBar"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:isIndicator="true" />
+
+            <com.manouti.itemfinder.util.ui.TypefacedTextView
+                android:id="@+id/item_rating_user_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tooltip_color"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                font:typeface="Roboto-Regular.ttf" />
+
+            <com.manouti.itemfinder.util.ui.TypefacedTextView
+                android:id="@+id/type_text_view"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                font:typeface="Roboto-Regular.ttf"
+                android:textColor="@color/tooltip_color" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_below="@id/item_summary_layout"
+            android:src="@drawable/pick_place_64dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/button_set_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_image_view"
+            android:textColor="@color/colorBlueButton"
+            android:src="@drawable/ic_star_border_black_36dp"
+            android:tint="@color/colorToggleStar"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            tools:ignore="ContentDescription" />
+
+        <com.manouti.itemfinder.util.ui.TypefacedTextView
+            android:id="@+id/item_description_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_below="@id/button_set_favorite"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            font:typeface="Roboto-Light.ttf" />
+
+        <View
+            android:id="@+id/item_description_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/item_description_text_view"
+            android:background="@color/separatorLightGray"
+            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+        <LinearLayout
+            android:id="@+id/place_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/item_description_separator"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/place_logo_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_place_black_24dp"
+                android:tint="@color/colorBlueButton"
+                tools:ignore="ContentDescription" />
+
+            <com.manouti.itemfinder.util.ui.TypefacedTextView
+                android:id="@+id/place_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                font:typeface="Roboto-Light.ttf" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/rating_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/place_layout"
+            android:background="@color/separatorLightGray"
+            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+        <com.manouti.itemfinder.util.ui.TypefacedTextView
+            android:id="@+id/rate_item_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating_separator"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7dp"
+            font:typeface="Roboto-Light.ttf"
+            android:text="@string/text_rate_item" />
+
+        <RatingBar
+            android:id="@+id/item_rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/rate_item_text_view"
+            android:theme="@style/RatingBar"
+            android:numStars="5"
+            android:stepSize="1" />
+        <!--LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/item_description_text_view"
+            android:gravity="end|center_vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_default_format"
+                    android:textColor="@color/result_view"
+                    android:textStyle="bold"
+                    android:paddingRight="@dimen/half_padding"/>
+
+                <TextView android:id="@+id/format_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/result_view"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_default_type"
+                    android:textColor="@color/result_view"
+                    android:textStyle="bold"
+                    android:paddingRight="@dimen/half_padding"/>
+
+                <TextView android:id="@+id/type_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/result_view"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_default_time"
+                    android:textColor="@color/result_view"
+                    android:textStyle="bold"
+                    android:paddingRight="@dimen/half_padding"/>
+
+                <TextView android:id="@+id/time_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/result_view"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView android:id="@+id/meta_text_view_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_default_meta"
+                    android:textColor="@color/result_minor_text"
+                    android:textStyle="bold"
+                    android:paddingRight="@dimen/half_padding"/>
+
+                <TextView android:id="@+id/meta_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/result_minor_text"/>
+
+            </LinearLayout>
+
+        </LinearLayout-->
+
+        <LinearLayout
+            android:id="@+id/supplement_contents_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/item_rating_bar"
+            android:padding="10dp">
+
+            <com.manouti.itemfinder.util.ui.TypefacedTextView
+                android:id="@+id/contents_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                font:typeface="Roboto-Light.ttf"
+                android:textColor="@color/result_view"
+                android:textColorLink="@color/result_view"
+                android:textSize="22sp"
+                android:paddingLeft="12dip"
+                android:autoLink="web"
+                android:textIsSelectable="true"/>
+
+            <com.manouti.itemfinder.util.ui.TypefacedTextView
+                android:id="@+id/contents_supplement_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                font:typeface="Roboto-Light.ttf"
+                android:textColor="@color/result_view"
+                android:textColorLink="@color/result_view"
+                android:paddingLeft="12dip"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:autoLink="web"
+                android:textIsSelectable="true"/>
+
+        </LinearLayout>
+
+        <com.manouti.itemfinder.util.ui.TypefacedTextView
+            android:id="@+id/user_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/supplement_contents_layout"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            font:typeface="RobotoCondensed-LightItalic.ttf" />
+
+    </RelativeLayout>
+
+</ScrollView>

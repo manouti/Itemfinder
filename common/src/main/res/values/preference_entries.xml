@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="distances">
+        <item>100 meters</item>
+        <item>500 meters</item>
+        <item>1 kilometer</item>
+        <item>2 kilometers</item>
+        <item>5 kilometers</item>
+        <item>10 kilometers</item>
+        <item>20 kilometers</item>
+        <item>50 kilometers</item>
+    </string-array>
+
+    <string-array name="distance_values">
+        <item>0.1</item>
+        <item>0.5</item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+    </string-array>
+
+</resources>

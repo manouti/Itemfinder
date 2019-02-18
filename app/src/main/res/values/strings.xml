@@ -1,0 +1,142 @@
+<resources>
+    <string name="tab_home">Home</string>
+    <string name="tab_nearby_items">Nearby</string>
+    <string name="tab_top_rated_items">Top Rated</string>
+    <string name="tab_add_select_item">Item</string>
+    <string name="tab_recent_items">Recent</string>
+    <string name="tab_favorite_items">Favorite</string>
+    <string name="tab_add_select_place">Place</string>
+    <string name="tab_review_add_item">Review Details</string>
+    <string name="search_hint">Search for an item</string>
+    <string name="add_item_id_text_view">Item ID</string>
+    <string name="item_description_text_view">Description</string>
+    <string name="item_place_text_view">Place</string>
+    <string name="add_item_summary_text_view">Summary (Required)</string>
+    <string name="add_item_summary_hint">ex. Les Paul Special-II</string>
+    <string name="add_item_description_text_view">Description (Recommended)</string>
+    <string name="add_item_description_hint">ex. Epiphone\'s number one selling model LP Special II is a great way for beginners to get started on guitar while getting the feel and tone of a Les Paul. Seasoned pros also love the Special II because it\'s a great-sounding workhorse of a guitar that allows them to leave their more expensive axes at home.</string>
+    <string name="review_items_info">Review items proposed by other users.</string>
+    <string name="review_hint_text_view">Review this item by either approving or rejecting it.</string>
+    <string name="review_help_text"><![CDATA[<b>Approve</b> items if you know they exist in the specified place. <b>Reject</b> items if you know they do not exist.]]></string>
+    <string name="new_item_info_text_view">The item you\'ve just scanned does not exist in the Itemfinder database.
+        If you\'d like to add this item to the database, fill in some details in the below fields. Newly added items
+        are submitted for review by other users and are approved once enough users have approved it. To increase the chance of
+    approving this item, include as much accurate information as possible in the description.</string>
+    <string name="add_item_info_text_view">Not finding an item to add? You can add a new item by scanning its barcode. You can
+    also scan the barcode to find an already existing item.</string>
+    <string name="add_item_recent_text_view">Recent items</string>
+    <string name="add_item_saved_locations_text_view">Saved locations</string>
+    <string name="barcode_lookup_error">Sorry, the barcode search encountered a problem.</string>
+    <string name="propose_place_text_view">Not finding your place? Propose a new one by clicking the  button on the toolbar.</string>
+    <string name="button_pick_place">Pick Place</string>
+    <string name="button_save_location">Save Location</string>
+    <string name="place_detail_text">Address: %1$s\nPhone: %2$s</string>
+    <string name="google_place_detail_text">Address: %1$s\nPhone: %2$s\n\n%3$s</string>
+    <string name="item_details_text_view">Item details</string>
+    <string name="place_details_text_view">Place details</string>
+    <string name="progress_loading_item">Loading item</string>
+    <string name="progress_adding_item">Adding item</string>
+    <string name="progress_retrieving_next_proposed_item">Loading next proposed item</string>
+    <string name="notice_item_added">Item added</string>
+    <string name="item_already_exists_in_place">This item already exists in this place</string>
+    <string name="item_already_exists_in_place_as_proposed">This item was already submitted by another user in this place</string>
+    <string name="item_already_proposed_by_current_user">You already submitted this item in this place</string>
+    <string name="item_already_exists_view">View this item?</string>
+    <string name="item_already_submitted_review">Review this item?</string>
+    <string name="item_already_exists_view_confirm">Yes</string>
+    <string name="error_adding_item">@string/unexpected_error_try_later</string>
+    <string name="error_viewing_item">@string/unexpected_error_try_later</string>
+    <string name="error_approving_item">@string/unexpected_error_try_later</string>
+    <string name="unexpected_error_try_later">An unexpected error occurred. Please try again later.</string>
+    <string name="unsupported_item_type">The type of this item is not supported</string>
+    <string name="network_connection_required">Internet connection required</string>
+    <string name="add_item_connection_explanation">To check whether this is a new item, an Internet connection is required.</string>
+    <string name="add_item_connection_explanation2">To check if this item already exists, or it has been submitted by another user, an Internet connection is required.</string>
+    <string name="msg_default_id">Item ID</string>
+
+    <string name="invalid_place_msg">Unknown location address. If you know a place in this location that has
+    the item, consider adding the place from the menu action above.</string>
+    <string name="bad_place_type_msg">The type of this place is not supported. Please select a different place.</string>
+    <string name="bad_place_type_for_item_msg">The type of this place is not supported for the selected item.
+        Please select a different place.</string>
+
+    <string name="button_approve_proposed_item">Approve</string>
+    <string name="button_reject_proposed_item">Reject</string>
+
+    <string name="add_place_info_text_view">Itemfinder\'s location and mapping features rely on Google Maps
+    and its Places database. If a place you know has a certain item and is not found in Itemfinder, you can add it if you have enough
+    reputation. The newly-added place will be available in Itemfinder after a short time, and is added to a moderation queue
+    for possible addition to Google\'s Places database and Google Maps.</string>
+    <string name="place_name_hint">Place name</string>
+    <string name="place_coordinates_text_view">Place coordinates</string>
+    <string name="place_address_hint">Address</string>
+    <string name="place_types_hint">Place type(s)</string>
+    <string name="place_phone_number_hint">Phone number</string>
+    <string name="place_website_hint">Website</string>
+    <string name="invalid_place_type">Invalid place type.</string>
+    <string name="phone_or_website_required">You should provide either a phone number or a website URI, or both.</string>
+    <string name="add_place_button">Add Place</string>
+    <string name="valid_place_types">Airport,Amusement park,Aquarium,Art gallery,Bakery,Bar,Beauty salon,Bicycle store,
+    Bookstore,Cafe,Car dealer,Car rental,Car repair,Car wash,Clothing store,Convenience store,Department store,
+    Electrician,Electronics store,Florist,Food,Furniture store,Gas station,Grocery or supermarket,Gym,Hair care,
+    Hardware store,Home goods store,Jewelry store,Library,Liquor store,Meal delivery,Meal takeaway,Movie rental,
+    Movie theater,Museum,Park,Pet store,Pharmacy,Restaurant,Shoe store,Shopping mall,Store,Subway station,
+    Train station,University,Zoo</string>
+    <string name="notice_place_added">Place added</string>
+
+    <string name="string_reputation">reputation</string>
+    <string name="default_about_user">No user information available.</string>
+    <string name="string_items_added">items added</string>
+
+    <!-- Activity titles -->
+    <string name="title_activity_add_item_place">Propose Item Location</string>
+    <string name="title_activity_add_item">Add New Item</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_saved_locations">@string/nav_saved_locations</string>
+    <string name="title_activity_legal_notices">Legal Notices</string>
+    <string name="title_activity_add_my_location">New Location</string>
+    <string name="title_activity_add_place">Add Place</string>
+    <string name="title_activity_favorite_items">@string/nav_favorite_items</string>
+    <string name="title_activity_user_added_items">@string/nav_added_items</string>
+    <string name="title_activity_review_added_items">@string/nav_rate_review_added_items</string>
+    <string name="title_activity_current_user_profile">My Profile</string>
+    <string name="title_activity_user_profile">User Profile</string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
+    <string name="title_activity_nearby_items">Items Nearby</string>
+    <string name="title_activity_searchable_item">Search Items</string>
+    <string name="title_activity_user_rewards">Rewards</string>
+
+    <string name="no_search_result_text_view">No items found that match the search query</string>
+    <string name="no_rewards_text_view">No rewards to claim</string>
+
+    <string name="user_rewards_description">Claim a reward by tapping it</string>
+
+    <!-- Saved locations string resources -->
+    <string name="action_clear_locations">Clear locations</string>
+    <string name="no_saved_location_text_view">There are no saved locations. To save a location for offline use, tap the button below.</string>
+    <string name="saved_locations_info_text_view">You can add or remove locations that you would like to save for quickly adding items.
+    The preferred locations among these will also be used to display the item locations on a map in case location settings are disabled
+    on your phone.</string>
+
+    <!-- Favorite items string resources -->
+    <string name="no_favorite_items_text_view">There are no favorite items. You can add a favorite by tapping the  button
+     when viewing an item.</string>
+    <string name="action_clear_items">Clear items</string>
+    <string name="favorite_items_info_text_view">Add items to your favorite list to make it faster to find them. When you start Itemfinder,
+    it will play a sound if any of the favorite items is found in your vicinity.</string>
+
+    <string name="no_added_items_text_view">No added items yet</string>
+    <string name="no_items_to_review_text_view">No items to review at the moment.</string>
+
+    <string name="context_action_remove">Remove</string>
+    <string name="context_nearby_items_action_unfavorite">Remove from list of favorite items</string>
+    <string name="context_action_favorite">Set as favorite</string>
+
+    <string name="error_geo_query">Could not retrieve nearby items</string>
+    <string name="error_top_rated_query">Could not retrieve top rated items</string>
+    <string name="error_geo_query_nearby_item">Could not check if item is nearby</string>
+
+    <string name="kiip_app_key">kiip_app_key</string>
+    <string name="kiip_first_proposed_item_moment_id">propose_item_location</string>
+    <string name="kiip_added_5_new_items_moment_id">added_5_new_items</string>
+</resources>

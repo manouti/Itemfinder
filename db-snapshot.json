@@ -1,0 +1,328 @@
+{
+  "item-locations" : {
+    "5281001113066" : {
+      "ChIJfwBZSNQWHxURCJnZSysBiWE" : {
+        ".priority" : "sy10z7s83u",
+        "g" : "sy10z7s83u",
+        "l" : [ 33.90113, 35.4811142 ]
+      },
+      "ChIJj6eAWCEXHxURlt5oiZKdzCI" : {
+        ".priority" : "sy10z9pp8d",
+        "g" : "sy10z9pp8d",
+        "l" : [ 33.8886289, 35.4954794 ]
+      }
+    }
+  },
+  "items" : {
+    "5030942109689" : {
+      "rating" : 0,
+      "type" : "PRODUCT",
+      "voteCount" : 0
+    },
+    "5051892191197" : {
+      "rating" : 0,
+      "type" : "PRODUCT",
+      "voteCount" : 0
+    },
+    "5281001113066" : {
+      "rating" : 0,
+      "type" : "PRODUCT",
+      "voteCount" : 0
+    },
+    "5281019901822" : {
+      "rating" : 0,
+      "type" : "PRODUCT",
+      "voteCount" : 0
+    },
+    "5281023000030" : {
+      "rating" : 0,
+      "type" : "PRODUCT",
+      "voteCount" : 0
+    },
+    "5281034010684" : {
+      "desc" : "Dummy desc",
+      "productID" : "5281034010684",
+      "rating" : 0,
+      "rawText" : "5281034010684",
+      "type" : "PRODUCT",
+      "voteCount" : 0
+    },
+    "5285000320364" : {
+      "rating" : 0,
+      "type" : "PRODUCT",
+      "voteCount" : 0
+    },
+    "662248913803" : {
+      "rating" : 0,
+      "type" : "PRODUCT",
+      "voteCount" : 0
+    },
+    "788930470833" : {
+      "rating" : 0,
+      "type" : "PRODUCT",
+      "voteCount" : 0
+    },
+    "8284841010684" : {
+      "rating" : 0,
+      "type" : "PRODUCT",
+      "voteCount" : 0
+    },
+    "8690784316774" : {
+      "rating" : 0,
+      "type" : "PRODUCT",
+      "voteCount" : 0
+    },
+    "8806087004557" : {
+      "rating" : 0,
+      "type" : "PRODUCT",
+      "voteCount" : 0
+    }
+  },
+  "places" : {
+    "8G5QVFQV+VGX4" : {
+      "lat" : 33.8897262,
+      "lng" : 35.493861,
+      "products" : {
+        "5051892191197" : true
+      }
+    },
+    "8G5QVFWW+37JJ" : {
+      "lat" : 33.8952184,
+      "lng" : 35.4956269,
+      "products" : {
+        "5281001113066" : true
+      }
+    },
+    "8G5QVFXV+RW52" : {
+      "lat" : 33.8995021,
+      "lng" : 35.4948487,
+      "products" : {
+        "5281034010684" : true
+      }
+    },
+    "ChIJKcTPvCYXHxURLHnHCYG6npw" : {
+      "addr" : "Zarif, Beirut, Lebanon",
+      "name" : "Baytna - Supermarket",
+      "rating" : -1,
+      "voteCount" : 0
+    },
+    "ChIJVe-FNNkWHxURGYVi5yyYJUU" : {
+      "lat" : 33.897332899999995,
+      "lng" : 35.4944525,
+      "products" : {
+        "5281034010684" : true
+      },
+      "rating" : 0
+    },
+    "ChIJfwBZSNQWHxURCJnZSysBiWE" : {
+      "addr" : "Beirut, Lebanon",
+      "items" : {
+        "788930470833" : true
+      },
+      "name" : "American University of Beirut",
+      "phone" : "+961 1 350 000",
+      "rating" : 0,
+      "voteCount" : 0,
+      "website" : {
+        "authority" : "www.aub.edu.lb",
+        "encodedAuthority" : "www.aub.edu.lb",
+        "encodedPath" : "/",
+        "encodedSchemeSpecificPart" : "//www.aub.edu.lb/",
+        "hierarchical" : true,
+        "path" : "/",
+        "relative" : false,
+        "scheme" : "http",
+        "schemeSpecificPart" : "//www.aub.edu.lb/"
+      }
+    },
+    "ChIJj6eAWCEXHxURlt5oiZKdzCI" : {
+      "addr" : "Beirut, Lebanon",
+      "items" : {
+        "5030942109689" : true
+      },
+      "name" : "Barbar",
+      "phone" : "+961 1 753 330",
+      "rating" : 0,
+      "voteCount" : 0
+    },
+    "ChIJn9URzCcXHxURll2oxbRQR1g" : {
+      "lat" : 33.8937868,
+      "lng" : 35.4901019,
+      "products" : {
+        "788930470833" : true
+      }
+    }
+  },
+  "places-geo" : {
+    "ChIJKcTPvCYXHxURLHnHCYG6npw" : {
+      ".priority" : "sy10z9mx1f",
+      "g" : "sy10z9mx1f",
+      "l" : [ 33.889916299999996, 35.4934724 ]
+    },
+    "ChIJfwBZSNQWHxURCJnZSysBiWE" : {
+      ".priority" : "sy10z7s83u",
+      "g" : "sy10z7s83u",
+      "l" : [ 33.90113, 35.4811142 ]
+    },
+    "ChIJj6eAWCEXHxURlt5oiZKdzCI" : {
+      ".priority" : "sy10z9pp8d",
+      "g" : "sy10z9pp8d",
+      "l" : [ 33.8886289, 35.4954794 ]
+    }
+  },
+  "products" : {
+    "5051892191197" : {
+      "8G5QVFQV+VGX4" : true,
+      "ChIJfwBZSNQWHxURCJnZSysBiWE" : true
+    },
+    "5281001111444" : {
+      "ChIJfwBZSNQWHxURCJnZSysBiWE" : true
+    },
+    "5281001113066" : {
+      "8G5QVFWW+37JJ" : true
+    },
+    "5281019901822" : {
+      "ChIJfwBZSNQWHxURCJnZSysBiWE" : true
+    },
+    "5281023000030" : {
+      "ChIJfwBZSNQWHxURCJnZSysBiWE" : true
+    },
+    "5281034010684" : {
+      "8G5QVFXV+RW52" : true,
+      "ChIJVe-FNNkWHxURGYVi5yyYJUU" : true,
+      "ChIJfwBZSNQWHxURCJnZSysBiWE" : true
+    },
+    "788930470833" : {
+      "ChIJn9URzCcXHxURll2oxbRQR1g" : true
+    }
+  },
+  "user-addeditems" : {
+    "hrHrBfdXqlVaTtmRsnDqmJmj9VO2" : {
+      "-KOvNtFHc34kETdq_CvJ" : {
+        "itemId" : "788930470833",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KP-Zf7mzZO3KQyoZo7L" : {
+        "itemId" : "5030942109689",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KP-ZfQkntc4gDgXTkMG" : {
+        "itemId" : "5030942109689",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KP-Zk_OHWVhnnII4_lC" : {
+        "itemId" : "5281023000030",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KP-_b0HDwuD7SwuARwU" : {
+        "itemId" : "5051892191197",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KP-_lGQHq3pIGQAeyo0" : {
+        "itemId" : "8690784316774",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KP-_o3LycOzJ9sGPxPV" : {
+        "itemId" : "5281019901822",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KP3ZVRjLnfZk4IUeGWb" : {
+        "itemId" : "8806087004557",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KP8ZE3CXZFiYldPVLIg" : {
+        "itemId" : "5030942109689",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KP8_0fJ8Dv2J-5DuMX5" : {
+        "itemId" : "8284841010684",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KPEoQpB3DyiOJuKkNWp" : {
+        "itemId" : "788930470833",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KPF5X4D1873dwABLChF" : {
+        "itemId" : "5281001113066",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KPF5_KLMM_rxc7UsqVc" : {
+        "itemId" : "788930470833",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KPF5okYMlObg-OYmb66" : {
+        "itemId" : "5030942109689",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KPF5tyN5ACFmfec9z_n" : {
+        "itemId" : "8690784316774",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KPF5wG-U1dgskJGnN-A" : {
+        "itemId" : "8806087004557",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KPF5zf5CpocFSSoA81s" : {
+        "itemId" : "662248913803",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KPF61IfKIZEE6hHElZy" : {
+        "itemId" : "5281023000030",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KPU0MY5Qe6sb2DJ5U5M" : {
+        "itemId" : "788930470833",
+        "placeId" : "ChIJfwBZSNQWHxURCJnZSysBiWE",
+        "placeName" : "American University of Beirut"
+      },
+      "-KPivZwo12T8UQ_IPEk_" : {
+        "itemId" : "5030942109689",
+        "placeId" : "ChIJj6eAWCEXHxURlt5oiZKdzCI",
+        "placeName" : "Barbar"
+      }
+    }
+  },
+  "user-locations" : {
+    "hrHrBfdXqlVaTtmRsnDqmJmj9VO2" : {
+      "ChIJfwBZSNQWHxURCJnZSysBiWE" : {
+        "favorite" : false,
+        "lat" : 33.90113,
+        "lng" : 35.4811142,
+        "placeDescription" : "Address: الكولا, Beirut, Lebanon\nPhone: +961 1 350 000\n\n",
+        "placeTitle" : "American University of Beirut"
+      },
+      "ChIJj6eAWCEXHxURuTVrsSQOy90" : {
+        "favorite" : false,
+        "lat" : 33.8886289,
+        "lng" : 35.4954794,
+        "placeDescription" : "Address: ChIJj6eAWCEXHxURuTVrsSQOy90\nPhone: Rue de Damas, Beirut, Lebanon\n\n",
+        "placeTitle" : "Beirut National Museum"
+      }
+    }
+  },
+  "users" : {
+    "hrHrBfdXqlVaTtmRsnDqmJmj9VO2" : {
+      "displayName" : "Mahmoud Anouti",
+      "name" : "Mahmoud Anouti",
+      "reputation" : 0
+    }
+  }
+}

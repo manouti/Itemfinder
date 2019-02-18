@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGreyBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".item.additem.AddItemPlaceActivity"
+    tools:showIn="@layout/activity_add_item_place">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/main_tabs"
+        android:layout_height="35dp"
+        android:layout_width="match_parent"
+        app:tabIndicatorColor="@color/colorBlueButton"
+        app:tabTextAppearance="@style/AddItemTab">
+
+        <android.support.design.widget.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/tab_add_select_item"/>
+
+        <android.support.design.widget.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/tab_add_select_place"/>
+
+        <android.support.design.widget.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/tab_review_add_item"/>
+
+    </android.support.design.widget.TabLayout>
+
+    <com.manouti.itemfinder.item.additem.NonSwipeableViewPager
+        android:id="@+id/main_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/main_tabs" />
+
+</RelativeLayout>

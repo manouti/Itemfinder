@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">Itemfinder</string>
+    <string name="app_version_number">0.10.1</string>
+    <string name="featured_items">Featured Items</string>
+
+    <string name="action_home">Home</string>
+    <string name="action_search">Search</string>
+    <string name="action_rewards">Rewards</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_help_center">Help Center</string>
+    <string name="action_about">About Itemfinder</string>
+    <string name="action_signup">Sign up</string>
+    <string name="action_login">Log in</string>
+    <string name="action_logout">Log out</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_edit_profile">Edit Profile</string>
+    <string name="action_add_new_item">Add</string>
+    <string name="action_save">Save</string>
+    <string name="action_refresh">Refresh</string>
+
+    <string name="not_available">N/A</string>
+
+    <string name="no_internet_connection">No Internet connection</string>
+
+    <string name="button_view_item">View item</string>
+    <string name="button_show_on_map">Show on map</string>
+    <string name="button_set_favorite">Add to favorites</string>
+    <string name="text_rate_item">Rate this item</string>
+
+    <string name="nav_favorite_items">Favorite Items</string>
+    <string name="nav_saved_locations">Saved Locations</string>
+    <string name="button_add_location">Add Location</string>
+    <string name="nav_added_items">Added Items</string>
+    <string name="nav_rate_review_added_items">Review / Rate Items</string>
+    <string name="button_add_item">Add Item</string>
+    <string name="action_request_place">Add place</string>
+    <string name="action_clear_add_item">Clear</string>
+    <string name="confirm_clear_add_item">This will clear the added item and its location. Proceed?</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="current_location_not_available">Problem retrieving current location</string>
+    <string name="user_location_not_available">No user location is available</string>
+    <string name="neither_location_nor_user_location_available">Either enable location settings, or log in to use a registered location</string>
+    <string name="location_required_for_featured_items">In order to view featured items based on location, either enable location
+    settings on your device, or register a specific location as a favorite.</string>
+    <string name="location_required_to_review_items">In order to review items proposed by other uses near you, either enable location
+    settings on your device, or register a specific location as a favorite.</string>
+    <string name="location_connection_suspended">Problem with connection to location services</string>
+    <string name="location_settings_disabled_nearby_item_check">Please enable location settings to check if item is nearby</string>
+    <string name="item_found_nearby">Yes, this item is located around here!</string>
+    <string name="item_not_found_nearby">No, this item is not found near your location&#8230;</string>
+    <string name="notification_title_items_nearby">Your favorite items around you</string>
+    <string name="notification_text_items_nearby">%1$s\n items located nearby</string>
+    <string name="location_settings_unavailable_using_offline_locations">Using saved offline location</string>
+    <string name="google_api_connection_failed">Could not connect to Google API services</string>
+    <string name="google_api_connection_resolution_problem">Could not resolve Google services connection error</string>
+    <string name="google_play_services_not_available">Google Play services is not available</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="required_field">You can\'t leave this empty.</string>
+    <string name="account_privacy_info">Your email and name will not be shown when publicly displaying your profile.</string>
+
+    <string name="button_show_map">Show map</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_history">History</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_share">Share</string>
+    <string name="msg_sure">Are you sure?</string>
+    <string name="preferences_name">Settings</string>
+    <string name="preferences_nearby_fav_items_title">Check for nearby favorite items</string>
+    <string name="preferences_nearby_items_task_bg">Check for nearby items in the background</string>
+    <string name="preferences_nearby_fav_item_proximity">Distance limit</string>
+    <string name="preferences_default_nearby_fav_item_proximity">2</string>
+    <string name="preferences_nearby_fav_items_actions_title">When items are detected nearby\u2026</string>
+    <string name="preferences_nearby_fav_items_task_play_sound">Play sound</string>
+    <string name="preferences_privacy_title">Privacy</string>
+    <string name="preferences_clear_search_history">Clear Search History</string>
+    <string name="search_history_cleared">Search history cleared</string>
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Access to the location service is required to retrieve your current location.</string>
+    <string name="permission_rationale_camera">Access to the camera is required to scan the barcode of an item.</string>
+    <string name="camera_permission_denied">This application requires a camera permission to scan the barcode of an item. Please try again and grant access to use the camera.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Itemfinder\'.</string>
+    <string name="location_permission_denied">This application requires a location permission to retrieve your current location. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Itemfinder\'.</string>
+    <string name="permission_required_toast">Location permission is required for this app.</string>
+    <string name="camera_permission_required_info">Camera permission is required for this app.</string>
+
+    <string name="attributions_note">Itemfinder for Android\n\nCopyright \u00a9 2016 Itemfinder. All rights reserved.
+        \n\nAttribution notices for third-party software used by Itemfinder are included below.</string>
+
+    <!-- Firebase UI - FOR TESTING PURPOSES, TO BE REMOVED -->
+
+    <string name="name_chat">ChatActivity</string>
+    <string name="name_auth_ui">Auth UI demo</string>
+
+    <string name="desc_chat">Demonstrates using a FirebaseRecyclerAdapter to load data from Firebase Database into a RecyclerView for a basic chat app.</string>
+    <string name="desc_auth_ui">Demonstrates the Firebase Auth UI flow, with customization options.</string>
+
+    <!-- strings for Auth UI demo activities -->
+    <eat-comment />
+    <string name="launch_title">FirebaseUI Auth Demo</string>
+    <string name="sign_in">Start</string>
+    <string name="green_theme">Green Theme</string>
+    <string name="purple_theme">Purple Theme</string>
+    <string name="use_theme_header">Use theme:</string>
+    <string name="logo_header">Logo:</string>
+    <string name="firebase_logo_label">Firebase Auth</string>
+    <string name="google_logo_label">Google</string>
+    <string name="no_logo_label">None</string>
+    <string name="auth_providers_header">Use auth providers:</string>
+    <string name="email_label">Email</string>
+    <string name="facebook_label">Facebook</string>
+    <string name="facebook_label_missing_config">Facebook - configuration missing</string>
+    <string name="google_label">Google</string>
+    <string name="google_label_missing_config">Google - configuration missing</string>
+    <string name="google_tos_label">Google TOS</string>
+    <string name="firebase_tos_label">Firebase TOS</string>
+    <string name="tos_header">Terms of Service URL:</string>
+    <string name="unknown_response">Unexpected onActivityResult response code</string>
+    <string name="ok_label">OK</string>
+    <string name="unknown_sign_in_response">Unknown response from AuthUI sign-in</string>
+    <string name="must_log_in_to_add_item">You must be logged in to add an item</string>
+    <string name="log_in_cancelled">Log in cancelled</string>
+    <string name="logged_in_header">You are logged in!</string>
+    <string name="delete_account_label">Delete account</string>
+    <string name="log_out_failed">Log out failed</string>
+    <string name="delete_account_failed">Delete account failed</string>
+    <string name="user_profile_header">User profile:</string>
+    <string name="profile_picture_content_desc">Profile picture</string>
+    <string name="button_change_item_image">Click on the image above to change it</string>
+    <string name="button_change_user_profile_image">Change picture</string>
+    <string name="about_user_hint">About me</string>
+    <string name="button_text_update_profile">Update</string>
+    <string name="progress_updating_profile">Updating profile</string>
+    <string name="generic_error_message">An error has occurred. Please try again later.</string>
+    <string name="user_image_max_size_exceeded">The size of your profile picture must not exceed 5MB</string>
+    <string name="default_theme">Default theme</string>
+    <string name="configuration_required">Configuration is required - see README.md</string>
+
+</resources>

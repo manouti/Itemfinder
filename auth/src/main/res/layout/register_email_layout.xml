@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|bottom">
+
+    <include layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+                      style="@style/FirebaseUI.WrapperStyle"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <!--
+                Since the TextInputLayouts change size based on whether or not an error
+                is showing we use a relative layout to position them absolutely
+            -->
+            <android.support.design.widget.TextInputLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/email_layout"
+                style="@style/FirebaseUI.Text.TextInputLayout"
+                android:paddingTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/FirebaseUI.Text.ErrorText"
+                app:hintTextAppearance="@style/FirebaseUI.Text.HintText">
+
+                <EditText
+                    android:id="@+id/email"
+                    style="@style/FirebaseUI.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/email_hint"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/name_layout"
+                style="@style/FirebaseUI.Text.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="112dp"
+                app:errorTextAppearance="@style/FirebaseUI.Text.ErrorText"
+                app:hintTextAppearance="@style/FirebaseUI.Text.HintText">
+
+                <EditText
+                    android:id="@+id/name"
+                    style="@style/FirebaseUI.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="@string/name_hint"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/password_layout"
+                style="@style/FirebaseUI.Text.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="224dp"
+                app:errorTextAppearance="@style/FirebaseUI.Text.ErrorText"
+                app:hintTextAppearance="@style/FirebaseUI.Text.HintText">
+
+                <EditText
+                    style="@style/FirebaseUI.EditText.PasswordField"
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                style="@style/FirebaseUI.ImageView.VisibilityToggle"
+                android:id="@+id/toggle_visibility"
+                android:layout_alignEnd="@id/password_layout"
+                android:paddingTop="242dp"
+                android:layout_alignRight="@id/password_layout">
+            </ImageView>
+
+            <android.support.design.widget.TextInputLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/display_name_layout"
+                style="@style/FirebaseUI.Text.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="336dp"
+                app:errorTextAppearance="@style/FirebaseUI.Text.ErrorText"
+                app:hintTextAppearance="@style/FirebaseUI.Text.HintText">
+
+                <EditText
+                    style="@style/FirebaseUI.EditText"
+                    android:id="@+id/display_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/display_name_hint"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/create_account_text"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="352dp"
+                style="@style/FirebaseUI.Text.BodyText"
+                />
+
+
+            <Button
+                style="@style/FirebaseUI.Button.NextButton"
+                android:layout_width="140dp"
+                android:layout_below="@id/create_account_text"
+                android:id="@+id/button_create"
+                android:layout_alignParentRight="true"
+                android:text="@string/button_text_create_account" />
+
+            <TextView
+                android:id="@+id/info_text"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/button_create"
+                android:layout_marginTop="15dp"
+                android:textSize="@dimen/info_text_size"
+                android:gravity="center"
+                android:text="@string/account_privacy_info" />
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

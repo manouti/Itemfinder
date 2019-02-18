@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <com.manouti.itemfinder.util.ui.TypefacedTextView
+        android:id="@+id/location_required_to_review_item_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location_required_to_review_items"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        font:typeface="Roboto-Regular.ttf"
+        android:drawableTop="@drawable/ic_location_off_black_48dp"
+        android:drawablePadding="5dp" />
+
+    <Button
+        android:id="@+id/button_save_location"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        style="@style/FirebaseUI.Button"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/button_text"
+        android:text="@string/button_add_location"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
